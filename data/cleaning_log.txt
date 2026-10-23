@@ -1,0 +1,5 @@
+PhishShift Cleaning Log
+Original rows: 6
+Missing required values: 0
+Exact duplicate messages removed: 0
+Final rows: 6

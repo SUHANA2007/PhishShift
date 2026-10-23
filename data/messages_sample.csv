@@ -1,0 +1,7 @@
+message_id,campaign_group,channel,body_text,label
+M001,sample_a,SMS,Your account will be blocked. Verify your password now.,phishing
+M002,sample_b,Email,Your meeting is scheduled for tomorrow at 10 AM.,legitimate
+M003,sample_c,SMS,You have won a prize. Pay a fee to claim it.,phishing
+M004,sample_d,Email,Please find the class timetable attached.,legitimate
+M005,sample_e,SMS,Urgent: confirm your login details immediately.,phishing
+M006,sample_f,Email,Thank you for attending today's workshop.,legitimate

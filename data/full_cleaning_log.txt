@@ -1,0 +1,4 @@
+Original rows: 5572
+Duplicate messages removed: 414
+Final rows: 5158
+Missing values remaining: 0
