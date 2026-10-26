@@ -129,3 +129,28 @@ if st.session_state["history"]:
 else:
     st.info("No messages scanned yet.")
 
+# Graph Dashboard
+st.subheader("📊 Message Analysis Dashboard")
+
+# Prepare chart data from scan history
+if st.session_state["history"]:
+    chart_data = pd.DataFrame(st.session_state["history"])
+
+    # Count each prediction type
+    prediction_counts = chart_data["Prediction"].value_counts()
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.write("### 🥧 Message Distribution")
+        st.bar_chart(prediction_counts)
+
+    with col2:
+        st.write("### 📊 Scan Results")
+        st.dataframe(
+            prediction_counts.rename_axis("Prediction").reset_index(name="Count"),
+            use_container_width=True
+        )
+else:
+    st.info("Scan a few messages to see your charts here.")
+
